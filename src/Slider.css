@@ -1,0 +1,51 @@
+.slider-container {
+    position: relative; /* Make the container a positioning context */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    position: relative; /* Ensure the slider is positioned relatively */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide-content {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .slider-button {
+    
+    color: black;
+    border: none;
+    padding: 10px;
+    position: absolute; /* Position the buttons absolutely */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1; /* Ensure buttons appear above the slides */
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  /* Add your additional styling as needed */
+  
